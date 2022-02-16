@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Masplore</title>
+   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   <script
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxalVJQBZPVE5_C0U9XJbDUya9m-SLWDU&libraries=visualization&v=weekly&callback=initMap"
+     async defer 
+   ></script>
+
+   <link rel="stylesheet" type="text/css" href="./style.css" />
+   <script src="./index.js"></script>
+ </head>
+ <body>
+
+   <!-- <div id="map"></div> -->
+
+
+   <div id="map-container">
+      <div id = "map"> </div> 
+      <div id="loader"></div>
+   </div>
+
+   <div>
+     <p>
+       Use the above heat map to determine the population 
+       density around your location so you can effectively social distance.
+     </p>
+   </div>
+   <footer>
+     <a href="google.com">terms of usage</a>
+     <p>
+       Created by Picsplore a division of TomZach Inc. all rights reserved. 
+     </p>
+   </footer>
+
+ </body>
+</html>  
+

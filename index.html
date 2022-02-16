@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<title>Mapsplore</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Masplore</title>
+<script src="./index.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxalVJQBZPVE5_C0U9XJbDUya9m-SLWDU&libraries=visualization&v=weekly&callback=initMap"
+  async defer 
+></script>
+
+<link rel="stylesheet" type="text/css" href="./style.css" />
+
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<style>
+body {font-family: "Raleway", Arial, sans-serif}
+.w3-row img {margin-bottom: -8px}
+</style>
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content w3-light-grey" style="max-width:1500px">
+
+  <!-- Header -->
+  <header class="w3-container w3-xlarge w3-padding-24">
+    <a href="#" class="w3-left w3-button w3-light-grey">Mapsplore</a>
+    <a href="#about" class="w3-right w3-button w3-light-grey">About</a>
+  </header>
+
+  <!-- Photo Grid -->
+  <div class="w3-row" style="margin-left: 5%; margin-right: 5%;"> 
+    <p>Use the heat map below to determine the population 
+    density around your location so you can effectively social distance.</p>
+  </div>
+  <div class="w3-row" style="flex-grow: 1;">
+    
+      <!-- <img src="images/logo.png" style="width:100%">
+      <img src="/w3images/streetart2.jpg" style="width:100%">
+      <img src="/w3images/streetart5.jpg" style="width:100%"> -->
+      <div id="map-container">
+        <div id = "map"> </div> 
+        <div id="loader"></div>
+     
+   
+    </div>
+
+  </div>
+<!-- End Page Content -->
+</div>
+
+<!-- Footer / About Section -->
+<footer class="w3-light-grey w3-padding-64 w3-center" id="about">
+  <a href="https://apps.apple.com/us/app/mapsplore/id1525949258?itsct=apps_box&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&amp;releaseDate=1602720000&h=fb7c31b1be48008513178787da8f91da" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a>
+  <h2>About</h2>
+  <img src="images/logo.png" class="w3-image w3-padding-32" width="50" height="50">
+  <form style="margin:auto;width:60%" action="/action_page.php" target="_blank">
+    <p>We are putting you in control of your risk by giving you the tools to effectively social distance and avoid COVID-19 hotspots.</p>
+      <p>A <a href="https://www.firefly-innovations.com/">CUNY Firefly Innovations Accelerator</a> Company. We are grateful to be apart of an organization which focuses on developing a sustainable future by tackling global challenges.</p>
+    <p class="w3-large w3-text-pink">Sign Up Below For Updates</p>
+    <div class="w3-section">
+      <label><b>Name</b></label>
+      <input class="w3-input w3-border" type="text" required name="Name">
+    </div>
+    <div class="w3-section">
+      <label><b>Email</b></label>
+      <input class="w3-input w3-border" type="text" required name="Email">
+    </div>
+    <div class="w3-section">
+      <label><b>Message</b></label>
+      <input class="w3-input w3-border" required name="Message">
+    </div>
+    <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
+  </form>
+  <br>
+  
+</footer>
+ <a href="https://www.picsploresocial.com/terms-of-usage">Terms of Usage</a>
+ <a href="https://www.picsploresocial.com/terms-of-service-privacy">Terms of Usage</a>
+</body>
+</html>
